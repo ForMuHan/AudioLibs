@@ -39,7 +39,8 @@ Step 3. 在布局中添加控件
   
   Step 4. 在activity中监听
   
-  arb = findViewById(R.id.arb);
+  	arb = findViewById(R.id.arb);
+  
         arb.setAudioFinishRecorderListener(new AudioRecordButton.AudioFinishRecorderListener() {
 	
             @Override
