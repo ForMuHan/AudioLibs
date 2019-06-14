@@ -1,6 +1,6 @@
 # AudioLibs
 声明：该项目从网上复制了大神代码，自己稍加修改便于使用，侵权必删
-仿微信一键录音，长按录音、上划取消、时间太短提示
+仿微信一键录音，长按录音、上划取消、时间太短提示。注意录音权限和读写权限的获取
 
 
 [![](https://jitpack.io/v/ForMuHan/AudioLibs.svg)](https://jitpack.io/#ForMuHan/AudioLibs)
@@ -38,8 +38,10 @@ Step 3. 在布局中添加控件
   </RelativeLayout>
   
   Step 4. 在activity中监听
-        arb = findViewById(R.id.arb);
+  
+  arb = findViewById(R.id.arb);
         arb.setAudioFinishRecorderListener(new AudioRecordButton.AudioFinishRecorderListener() {
+	
             @Override
             public void onFinished(float seconds, String filePath) {
                 Log.e("syw","filePath:"+filePath);
@@ -65,4 +67,5 @@ Step 3. 在布局中添加控件
                 Log.e("syw","onShort:");
             }
         });
+        
   
