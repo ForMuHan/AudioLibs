@@ -142,6 +142,9 @@ public class AudioRecordButton extends Button implements AudioManager.AudioStage
                     break;
                 case MSG_VOICE_STOP:
                     isOverTime = true;//超时
+                    if (null != mDialogManager){
+                        mDialogManager.dimissDialog();
+                    }
                     mAudioManager.release();// release释放一个mediarecorder
                     mListener.onFinished(mTime, mAudioManager.getCurrentFilePath());
                     reset();// 恢复标志位
