@@ -20,7 +20,7 @@ Step 1. 在project下 build.gradle 添加
 Step 2. 在项目中添加依赖
 
 	dependencies {
-	        implementation 'com.github.ForMuHan:AudioLibs:V1.0.0'
+	        implementation 'com.github.ForMuHan:AudioLibs:V1.0.1'
 	}
   
 Step 3. 在布局中添加控件
